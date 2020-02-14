@@ -1,5 +1,5 @@
 # Taskbox
-    https://www.learnstorybook.com/intro-to-storybook/angular/en/composite-component/
+    https://www.learnstorybook.com/intro-to-storybook/angular/en/data/
 #Running
     npm run jest # jest tests
     npm run storybook # localhost:6006

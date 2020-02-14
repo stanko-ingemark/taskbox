@@ -17,7 +17,12 @@
     "setupFilesAfterEnv": [
       "<rootDir>/src/jest-config/setup.ts"
     ],
-    "transformIgnorePatterns":[
+    "transform": {
+      "^.+\\.(ts|html)$": "ts-jest",
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.stories\\.[jt]sx?$": "@storybook/addon-storyshots/injectFileName"
+    },
+    "transformIgnorePatterns": [
       "node_modules/(?!@storybook/*)"
     ],
     "testPathIgnorePatterns": [
@@ -48,10 +53,6 @@
     "moduleNameMapper": {
       "\\.(css|less)$": "<rootDir>/src/jest-config/styleMock.js",
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/jest-config/fileMock.js"
-    },
-    "transform": {
-      "^.+\\.(ts|html)$": "ts-jest",
-      "^.+\\.js$": "babel-jest"
     },
     "moduleFileExtensions": [
       "ts",
@@ -88,6 +89,7 @@
     "@storybook/addon-actions": "^5.3.9",
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addon-notes": "^5.3.9",
+    "@storybook/addon-storyshots": "^5.3.13",
     "@storybook/addons": "^5.3.9",
     "@storybook/angular": "^5.3.9",
     "@testing-library/angular": "^8.2.0",

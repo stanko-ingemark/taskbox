@@ -19,7 +19,7 @@ export class TaskListComponent implements OnInit {
   set tasks(arr: Task[]) {
     this.tasksInOrder = [
       ...arr.filter(t => t.state === 'TASK_PINNED'),
-      ...arr.filter(t => t.state !== 'TASK_PINNED'),
+      ...arr.filter(t => t.state !== 'TASK_PINNED')
     ];
   }
 
