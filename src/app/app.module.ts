@@ -15,9 +15,7 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     TaskModule,
-    NgxsModule.forRoot([]),
-    NgxsReduxDevtoolsPluginModule.forRoot(),
-    NgxsLoggerPluginModule.forRoot(),
+    NgxsModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent],
