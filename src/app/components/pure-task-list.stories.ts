@@ -13,7 +13,7 @@ export default {
     moduleMetadata({
       // imports both components to allow component composition with storybook
       declarations: [PureTaskListComponent, TaskComponent],
-      imports: [CommonModule],
+      imports: [CommonModule]
     }),
   ],
 };
