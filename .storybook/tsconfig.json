@@ -1,6 +1,9 @@
 {
+  "emitDecoratorMetadata": true,
   "extends": "../tsconfig.app.json",
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+
     "types": [
       "node"
     ],

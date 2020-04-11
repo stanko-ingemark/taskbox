@@ -6,6 +6,9 @@ import { TaskModule } from './task.module';
 
 import { PureInboxScreenComponent } from './pure-inbox-screen.component';
 import { TasksState } from '../state/task.state';
+import {PureTaskListComponent} from './pure-task-list.component';
+import {TaskComponent} from './task.component';
+
 export default {
   title: 'PureInboxScreen',
   decorators: [
